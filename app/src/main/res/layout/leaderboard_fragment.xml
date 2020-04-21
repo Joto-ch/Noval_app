@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/book_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:id="@+id/input_book"
+            android:layout_width="280dp"
+            android:layout_height="48dp"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:gravity="center"
+            android:hint="请输入搜索内容..."
+            android:lines="1"
+            android:layout_marginLeft="40dp"/>
+
+
+        <ImageButton
+            android:id="@+id/search_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/search"
+            android:layout_marginRight="10dp"
+            android:background="#fafafa"
+            android:layout_toRightOf="@+id/input_book"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/book_hot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>
